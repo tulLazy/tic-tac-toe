@@ -1,6 +1,7 @@
 from helpful_scripts import draw_board, player_turn, check_for_wins
 import os
 
+# Dictionary that will help us later to play tic tac toe
 hits = {1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9"}
 
 
