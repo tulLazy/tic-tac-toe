@@ -7,13 +7,17 @@ hits = {1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9"}
 
 def main():
     print("Welcome in tic tac toe")
+    # Players names or nicknames
     first_player = input("Insert first player's name or nickname: ")
     second_player = input("Insert second player's name or nickname: ")
+    # This variable is set True and as long as it stays True the while loop will keep looping 
     playing = True
+    # This keeps track of whose turn is it 
     turn = 0
+    # We need this variable to send an error message when a value that the player sent is not valid
     previous_turn = -1
     while playing:
-        # Resets the screen so that we do not have to print the playing board every time
+        # Resets the terminal so that we do not have to print the playing board every time
         os.system("cls" if os.name == "nt" else "clear")
         # Draw the current board game
         draw_board(hits)
